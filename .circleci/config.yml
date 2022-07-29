@@ -1,15 +1,15 @@
-
+version: 2.1
 
 workflows:
   test-env-vars:
-version: 2.1
+
 orbs:
   python: circleci/python@2.0.3
 
 
 
 
-context: BEARER_TOKEN_TWITTER_CORE_APP
+# context: BEARER_TOKEN_TWITTER_CORE_APP
 
 
 
