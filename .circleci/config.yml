@@ -21,7 +21,7 @@ jobs:
       - run:
           name: "echo an env var that is part of our context"
           command: |
-            echo BEARER_TOKEN      
+            echo $ "BEARER_TOKEN"      
 
       - python/install-packages:
           pkg-manager: pip
