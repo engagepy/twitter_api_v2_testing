@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Run tests
           env:
-            BEARER_TOKEN: ${{secrets.BEARER_TOKEN}}
+            BEARER_TOKEN: {{secrets.BEARER_TOKEN}}
           command: python3 tw_core_app.py BEARER_TOKEN
       - persist_to_workspace:
           root: ~/project
