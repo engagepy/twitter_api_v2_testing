@@ -1,0 +1,5 @@
+main/*
+api_token.py
+__pycache__
+__pycache__/api_token.cpython-39.pyc
+.vscode

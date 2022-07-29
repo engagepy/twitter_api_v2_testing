@@ -1,0 +1,29 @@
+version: 2.1
+orbs:
+  python: circleci/python@2.0.3
+
+jobs:
+  build_and_test: # this can be any name you choose
+    executor: python/default
+    
+    steps:
+      - checkout
+
+      - python/install-packages:
+          pkg-manager: pip
+      - run:
+          name: Run tests
+          env:
+            BEARER_TOKEN: ${{secrets.BEARER_TOKEN}}
+          command: python3 tw_core_app.py BEARER_TOKEN
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - .
+
+  
+workflows:
+  testpass:
+    jobs:
+      - build_and_test
+    
