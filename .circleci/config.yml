@@ -4,37 +4,37 @@ orbs:
 
 workflows:
   test-env-vars:
-    jobs:
-      - build_and_test:
-          context: BEARER_TOKEN_TWITTER_CORE_APP
+     jobs:
+       build_and_test:
+         context: BEARER_TOKEN_TWITTER_CORE_APP # this can be any name you choose
+         executor: python/default
+         
+         steps:
+           - checkout
+     
+           - run:
+               name: "echo an env var that is part of our context"
+               command: |
+                 echo $BEARER_TOKEN      
+     
+           - python/install-packages:
+               pkg-manager: pip
+           - run:
+               name: Run tests
+               env:
+                 BEARER_TOKEN: ${{BEARER_TOKEN}}
+               command: python3 tw_core_app.py 
+           - persist_to_workspace:
+               root: ~/project
+               paths:
+                 - .
+          
 
 
 # context: BEARER_TOKEN_TWITTER_CORE_APP
 
 
-jobs:
-  build_and_test: # this can be any name you choose
-    executor: python/default
-    
-    steps:
-      - checkout
 
-      - run:
-          name: "echo an env var that is part of our context"
-          command: |
-            echo $BEARER_TOKEN      
-
-      - python/install-packages:
-          pkg-manager: pip
-      - run:
-          name: Run tests
-          env:
-            BEARER_TOKEN: ${{BEARER_TOKEN}}
-          command: python3 tw_core_app.py 
-      - persist_to_workspace:
-          root: ~/project
-          paths:
-            - .
 
   
 workflows:
