@@ -5,8 +5,7 @@ try:
 except:
     pass
 import os
-#test
-#setting token
+
 try:
     token= os.environ['BEARER_TOKEN']
 except:
