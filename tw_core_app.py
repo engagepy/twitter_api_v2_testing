@@ -1,5 +1,9 @@
 import tweepy
-import api_token
+
+try:
+    import api_token
+except:
+    pass
 import os
 #test
 #setting token
