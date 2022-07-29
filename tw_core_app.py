@@ -51,11 +51,11 @@ for tweet in response:
     print("\n")
     print("\n")
 
-print(f"Tweet Research Query: {query}")
+print(f"Research Query: {query.split()[0]}")
 print("")
-print(f"Total Tweets Scanned {count}")
+print(f"Tweets Scanned {count}")
 print("")
-print(f"Scanner 1 Detected'{word_check_1.lower()}' count is {word_count_1} \nScanner 2 Detected'{word_check_2.lower()}' count is {word_count_2}")
+print(f"'{word_check_1.lower()}' count is {word_count_1} \n'{word_check_2.lower()}' count is {word_count_2}")
 print("")
 print("<<<<<<<<------------ TWEET VOLUME IN PAST 7 DAYS")
 for tweet in counts.data:
