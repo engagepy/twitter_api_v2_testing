@@ -1,14 +1,10 @@
 import tweepy
 import os
-
+#test
 #setting token
 token= os.environ['BEARER_TOKEN']
 
-#using token referenced from config.yml saved on github
 client = tweepy.Client(bearer_token=token)
-
-#using token directly
-client = tweepy.Client(bearer_token="MY_TOKEN_MADE_PUBLIC")
 
 query = 'Ather -is:retweet -#eximbank -btc -eth -nft -crypto -donation -donating -donate lang:en '
 response = tweepy.Paginator(
