@@ -5,16 +5,23 @@ orbs:
 jobs:
   build_and_test: # this can be any name you choose
     executor: python/default
+      context: BEARER_TOKEN_TWITTER_CORE_APP
+      
     
     steps:
       - checkout
+
+      - run:
+          name: "echo an env var that is part of our context"
+          command: |
+            echo $BEARER_TOKEN      
 
       - python/install-packages:
           pkg-manager: pip
       - run:
           name: Run tests
           env:
-            BEARER_TOKEN: {{secrets.BEARER_TOKEN}}
+            BEARER_TOKEN: ${{BEARER_TOKEN}}
           command: python3 tw_core_app.py 
       - persist_to_workspace:
           root: ~/project
