@@ -3,14 +3,6 @@ version: 2.1
 orbs:
   python: circleci/python@2.0.3
 
-
-
-
-# context: BEARER_TOKEN_TWITTER_CORE_APP
-
-
-
-
 jobs:
   build_and_test: # this can be any name you choose
     executor: python/default
@@ -21,7 +13,7 @@ jobs:
       - run:
           name: "echo an env var that is part of our context"
           command: |
-            echo $ BEARER_TOKEN      
+            echo $ BEARER_TOKEN       
 
       - python/install-packages:
           pkg-manager: pip
@@ -34,8 +26,6 @@ jobs:
           root: ~/project
           paths:
             - .
-
-  
 workflows:
   testpass:
     jobs:

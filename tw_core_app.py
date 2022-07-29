@@ -1,10 +1,15 @@
 import tweepy
+import api_token
 import os
 #test
 #setting token
-token= os.environ['BEARER_TOKEN']
+try:
+    token= os.environ['BEARER_TOKEN']
+except:
+    token = api_token.BEARER_TOKEN
 
 client = tweepy.Client(bearer_token=token)
+#client_2 = tweepy.Client(bearer_token=api_token.BEARER_TOKEN)
 
 query = 'Ather -is:retweet -#eximbank -btc -eth -nft -crypto -donation -donating -donate lang:en '
 response = tweepy.Paginator(
@@ -15,6 +20,8 @@ response = tweepy.Paginator(
         )
 
 counts = client.get_recent_tweets_count(query=query, granularity = 'day')
+
+
 
 #case sensitive word check
 word_check_1 = "love"
