@@ -6,7 +6,7 @@ jobs:
   build_and_test: # this can be any name you choose
     context: BEARER_TOKEN_TWITTER_CORE_APP
     executor: python/default
-      context: BEARER_TOKEN_TWITTER_CORE_APP
+      
       
     
     steps:
