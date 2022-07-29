@@ -1,8 +1,5 @@
 version: 2.1
 
-workflows:
-  test-env-vars:
-
 orbs:
   python: circleci/python@2.0.3
 
