@@ -37,8 +37,15 @@ cd twitter_api_v2_testing folder
 ```
 pip install -r requirements.txt 
 ```
+## 6. Add api_token.py to repository and save variable BEARER_TOKEN
 
-## 6. Run the python script main.py 
+```
+touch api_token.py 
+```
+```
+BEARER_TOKEN = "YOUR_API_TOKEN"
+```
+## 7. Run the python script main.py 
 
 ```
 Python3 tw_core_app.py
@@ -67,13 +74,13 @@ Tweet Volume 35
 
 Note: Scroll limit in terminal may prevent you from scrolling the entire volume returned. 
 >
-## 7. Adjust the query parameter, save file and rerun
+## 8. Adjust the query parameter, save file and rerun
 
 ```
 query = 'Tesla'
 ```
 
-## 8. Now adjust the inference by adjusting the following words, note only strings are accepted. 
+## 9. Now adjust the inference by adjusting the following words, note only strings are accepted. 
 
 ```
 word_check_1 = "love"
@@ -81,4 +88,4 @@ word_check_2 = "hate"
 
 ```
 
-## 9. For understanding the filters in more details checkout the [Medium Article.](https://medium.com/@zorawar.purohit/python-beginners-research-with-twitter-api-v2-11f038c70368)
+## 10. To grasp the filters in more details checkout this [Medium Article.](https://medium.com/@zorawar.purohit/python-beginners-research-with-twitter-api-v2-11f038c70368)
