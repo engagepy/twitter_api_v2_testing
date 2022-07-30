@@ -88,4 +88,4 @@ word_check_2 = "hate"
 
 ```
 
-## 10. To grasp the filters in more details checkout this [Medium Article.](https://medium.com/@zorawar.purohit/python-beginners-research-with-twitter-api-v2-11f038c70368)
+## 10. To grasp the filters in more detail checkout this [Medium Article.](https://medium.com/@zorawar.purohit/python-beginners-research-with-twitter-api-v2-11f038c70368)
