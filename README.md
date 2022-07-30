@@ -1,3 +1,7 @@
+https://img.shields.io/github/workflow/status/zora89/twitter_api_v2_testing/Python%20application?style=for-the-badge
+
+[![<Python Application>](https://circleci.com/gh/zora89/twitter_api_v2_testing.svg?style=shield)](https://app.circleci.com/pipelines/github/zora89)
+
 # Python Script for Reasearch via Twitter API V2
 
 ## Enables query search and additional layer of inference on the resulting data stream
