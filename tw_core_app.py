@@ -24,8 +24,6 @@ response = tweepy.Paginator(
 
 counts = client.get_recent_tweets_count(query=query, granularity = 'day')
 
-
-
 #case sensitive word check
 word_check_1 = "love"
 word_check_2 = "hate"
