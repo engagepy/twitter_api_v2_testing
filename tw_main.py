@@ -12,7 +12,7 @@ response = client.search_recent_tweets(query=query,
             user_fields=['profile_image_url'], 
             expansions=['author_id'])
             
-print(response)
+#print(response)
 
 #checks for tweet count in 7 days on said query
 counts = client.get_recent_tweets_count(query=query, granularity = 'day')

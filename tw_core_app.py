@@ -40,8 +40,8 @@ for tweet in response:
     #enter the word you wish to count occurence of in each tweet !
     word_1_alert = lowercase_tweet.count(word_check_1.lower())
     word_2_alert = lowercase_tweet.count(word_check_2.lower())
-    print(f" '--->>>{word_check_1}' repeated {word_1_alert} times")
-    print(f" '--->>>{word_check_2}' repeated {word_2_alert} times")
+    #print(f" '--->>>{word_check_1}' repeated {word_1_alert} times")
+    #print(f" '--->>>{word_check_2}' repeated {word_2_alert} times")
     word_count_1 += word_1_alert
     word_count_2 += word_2_alert
     print(tweet.text)
