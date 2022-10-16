@@ -14,7 +14,7 @@ except:
 client = tweepy.Client(bearer_token=token)
 #client_2 = tweepy.Client(bearer_token=api_token.BEARER_TOKEN)
 
-query = 'Ather -is:retweet -#eximbank -btc -eth -nft -crypto -donation -donating -donate lang:en '
+query = ' Dubai -is:retweet -#eximbank -btc -eth -nft -crypto -donation -donating -donate lang:en'
 response = tweepy.Paginator(
         client.search_recent_tweets, query=query, max_results=100, 
         tweet_fields=['created_at', 'lang'], 
@@ -25,8 +25,8 @@ response = tweepy.Paginator(
 counts = client.get_recent_tweets_count(query=query, granularity = 'day')
 
 #case sensitive word check
-word_check_1 = "love"
-word_check_2 = "hate"
+word_check_1 = "gitex"
+word_check_2 = "devslam"
 
 #setting counters for ease of data relay
 count = 0
