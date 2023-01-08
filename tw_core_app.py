@@ -19,7 +19,7 @@ response = tweepy.Paginator(
         client.search_recent_tweets, query=query, max_results=100, 
         tweet_fields=['created_at', 'lang'], 
         user_fields=['profile_image_url'], 
-        expansions=['author_id']).flatten(limit=10000        )
+        expansions=['author_id']).flatten(limit=1000        )
 
 counts = client.get_recent_tweets_count(query=query, granularity = 'day')
 
