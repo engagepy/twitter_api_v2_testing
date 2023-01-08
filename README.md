@@ -1,4 +1,6 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/engagepy/twitter_api_v2_testing/Python%20application?style=for-the-badge)
+![GitHub Workflow Status](https://github.com/engagepy/twitter_api_v2_testing/actions/workflows/django1.yml/badge.svg)
+
+
 
 [![tw_core_app](https://circleci.com/gh/engagepy/twitter_api_v2_testing.svg?style=shield)](https://app.circleci.com/pipelines/github/zora89)
 
