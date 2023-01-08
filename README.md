@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://github.com/engagepy/twitter_api_v2_testing/actions/workflows/django1.yml/badge.svg)
+![GitHub Workflow Status](https://github.com/engagepy/twitter_api_v2_testing/actions/workflows/python-app.yml/badge.svg)
 
 
 
